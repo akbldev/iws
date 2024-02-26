@@ -8,8 +8,8 @@
     --primary: 87, 26%, 31%;
     --primary-light: 93, 21%, 48%;
     --primary-lighter: 84, 38%, 85%;
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 0, 0%, 100%;
+    --foreground: 240, 10%, 3.9%;
   }
 }
 
