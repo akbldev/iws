@@ -8,6 +8,10 @@ const config: Config = {
         oxanium: ["var(--font-oxanium)"],
         oxygen: ["var(--font-oxygen)"],
       },
+      container: {
+        center: true,
+        padding: "1rem",
+      },
       colors: {
         primary: {
           DEFAULT: "hsl(var(--primary), <alpha-value>)",

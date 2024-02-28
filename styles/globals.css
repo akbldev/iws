@@ -18,3 +18,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .highlight {
+    @apply relative
+    z-[1]
+    after:absolute
+    after:bottom-0
+    after:left-0
+    after:-z-[1]
+    after:h-[20%]
+    after:w-full
+    after:-translate-y-[20%]
+    after:bg-primary-light
+    after:transition-all
+    hover:after:h-[35%];
+  }
+}
