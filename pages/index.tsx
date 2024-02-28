@@ -4,6 +4,7 @@ import Cta2 from "@/components/home/cta2";
 import Hero from "@/components/home/hero";
 import Protfolio from "@/components/home/protfolio";
 import Services from "@/components/home/services";
+import Testimonial from "@/components/home/testimonial";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Services />
       <Protfolio />
       <Cta2 />
+      <Testimonial />
     </div>
   );
 };

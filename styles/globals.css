@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./embla.css";
+
 @layer base {
   :root {
     --primary-dark: 120, 29%, 23%;
@@ -15,7 +17,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground selection:bg-primary-light selection:text-background;
   }
 }
 
