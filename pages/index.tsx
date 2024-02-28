@@ -1,6 +1,7 @@
 import About from "@/components/home/about";
 import Cta from "@/components/home/cta";
 import Hero from "@/components/home/hero";
+import Protfolio from "@/components/home/protfolio";
 import Services from "@/components/home/services";
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
       <About />
       <Cta />
       <Services />
+      <Protfolio />
     </div>
   );
 };
