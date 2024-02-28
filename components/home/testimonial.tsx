@@ -32,7 +32,7 @@ const Testimonial = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="embla" ref={emblaRef}>
+        <div className="embla [--slide-size:50%]" ref={emblaRef}>
           <div className="embla__container">
             {testimonials.map((testimonial) => (
               <div key={testimonial.fullName} className="embla__slide">

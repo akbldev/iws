@@ -1,11 +1,11 @@
 .embla {
   overflow: hidden;
   --slide-spacing: 2rem;
+  /*
+    this get overidded in tailwindcss beside .embla class
+    e.g: [--slide-size: 100%] lg:[--slide-size: 50%]
+  */
   --slide-size: 100%;
-
-  @media (min-width: 1024px) {
-    --slide-size: 50%;
-  }
 }
 
 .embla__container {
