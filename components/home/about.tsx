@@ -10,7 +10,7 @@ const About = () => {
   ];
 
   return (
-    <section className="container flex items-stretch gap-10 py-20">
+    <section className="container flex items-stretch gap-10">
       <div className="grid flex-1 grid-cols-2 gap-6">
         <div className="rounded-tl-3xl bg-primary-lighter"></div>
         <div className="rounded-tr-3xl bg-primary-lighter"></div>
