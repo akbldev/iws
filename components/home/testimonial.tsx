@@ -3,16 +3,22 @@ import useEmblaCarousel from "embla-carousel-react";
 const Testimonial = () => {
   const testimonials = [
     {
-      fullName: "Ahmed Khamas",
-      job: "CTO chez ECOWATT",
-      img: "/images/testimonial-1.jpg",
-      text: "Here are a few projects we worked on recently for clients worldwide.Here are a few projects we worked on recently for clients worldwide.",
+      fullName: "AMIN FARS",
+      job: "ICP chez Ecotaqa",
+      img: "/images/testimonial/amin-fares.webp",
+      text: "Leur expertise exceptionnelle en création de sites web et de systèmes ERP a transformé notre entreprise.",
     },
     {
-      fullName: "Ahmed Khamas",
-      job: "CTO chez ECOWATT",
-      img: "/images/testimonial-1.jpg",
-      text: "Here are a few projects we worked on recently for clients worldwide.Here are a few projects we worked on recently for clients worldwide.",
+      fullName: "ABDERAHMAN KADOURI",
+      job: "CDC chez ECOWATT",
+      img: "/images/testimonial/abderahman-kadouri.webp",
+      text: "Grâce au service de création de posts sociaux d'IWS, notre présence en ligne a été transformée.",
+    },
+    {
+      fullName: "HAMID BOULAASIR",
+      job: "CP chez Taqaunivers",
+      img: "/images/testimonial/hamid-boulaasir.webp",
+      text: "Le système ERP d'IWS a considérablement amélioré l'efficacité et la productivité de notre entreprise.",
     },
   ];
 
@@ -40,7 +46,7 @@ const Testimonial = () => {
                   <div className="aspect-square h-24 rounded-full border-4 bg-gray-100 shadow-xl">
                     <img
                       src={testimonial.img}
-                      className="rounded-full object-cover"
+                      className="h-full w-full rounded-full object-cover"
                       alt={testimonial.fullName}
                     />
                   </div>
