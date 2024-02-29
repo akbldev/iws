@@ -8,8 +8,11 @@ import Hero from "@/components/home/hero";
 import Protfolio from "@/components/home/protfolio";
 import Services from "@/components/home/services";
 import Testimonial from "@/components/home/testimonial";
+import Layout from "@/components/layouts/layout";
+import { NextPageWithLayout } from "@/types/next";
+import Head from "next/head";
 
-const HomePage = () => {
+const HomePage: NextPageWithLayout = () => {
   return (
     <div className="space-y-20">
       <Hero />
@@ -25,5 +28,14 @@ const HomePage = () => {
     </div>
   );
 };
+
+HomePage.getLayout = (page) => (
+  <Layout>
+    <Head>
+      <title>Iemmar Web Services | IWS</title>
+    </Head>
+    {page}
+  </Layout>
+);
 
 export default HomePage;

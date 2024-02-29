@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Oxanium, Oxygen } from "next/font/google";
+import Head from "next/head";
 import { PropsWithChildren } from "react";
 import Header from "../header";
 
@@ -18,10 +19,15 @@ interface LayoutProps extends PropsWithChildren {}
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={cn(oxanium.variable, oxygen.variable, "font-oxygen")}>
-      <Header />
-      {children}
-    </div>
+    <>
+      <Head>
+        <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+      </Head>
+      <div className={cn(oxanium.variable, oxygen.variable, "font-oxygen")}>
+        <Header />
+        {children}
+      </div>
+    </>
   );
 };
 
