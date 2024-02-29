@@ -40,31 +40,16 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="font-oxanium">
-          <ul className="flex items-center gap-8 rounded-full border px-4 font-medium">
+          <ul className="flex items-center gap-8 font-medium">
             {navigation.map((item) => (
               <li
                 key={item.label}
                 className="
                   relative
-                  py-1.5
                   transition-colors
-                  before:absolute
-                  before:left-0
-                  before:top-0
-                  before:flex
-                  before:-translate-x-1/2
-                  before:-translate-y-1/2
-                  before:items-center
-                  before:justify-center
-                  before:rounded-full
-                  before:bg-primary-lighter
-                  before:text-[6px]
-                  before:text-primary-dark
-                  before:transition-all
-                  before:duration-300
 
                   after:absolute
-                  after:left-full
+                  after:left-1/2
                   after:top-full
                   after:flex
                   after:-translate-x-1/2
@@ -72,21 +57,13 @@ const Header = () => {
                   after:items-center
                   after:justify-center
                   after:rounded-full
-                  after:bg-primary-lighter
+                  after:bg-primary-light
                   after:text-[6px]
-                  after:text-primary-dark
+                  after:text-primary-lighter
+
                   after:transition-all
                   after:duration-300
-
-                  hover:text-primary-light
-                  hover:before:left-1/2
-                  hover:before:bg-primary-light
-                  hover:before:text-primary-lighter
-                  hover:before:content-['</>']
-
-                  hover:after:left-1/2
-                  hover:after:bg-primary-light
-                  hover:after:text-primary-lighter
+                  hover:after:translate-y-0
                   hover:after:content-['</>']
                 "
               >
