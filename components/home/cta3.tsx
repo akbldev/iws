@@ -1,8 +1,8 @@
 import { Button } from "../ui/button";
 
-const Cta = () => {
+const Cta3 = () => {
   return (
-    <section className="bg-[linear-gradient(to_right_bottom,hsla(var(--primary-dark),.90),hsla(var(--primary-dark),.90)),url('/images/cta-bg.webp')] bg-center">
+    <section className="bg-[linear-gradient(to_right_bottom,hsla(var(--primary-dark),.90),hsla(var(--primary-dark),.90)),url('/images/cta3-bg.webp')] bg-center">
       <div className="container flex items-center justify-between py-14 font-oxanium text-background">
         <div className="space-y-3">
           <h5 className="text-3xl">
@@ -27,4 +27,4 @@ const Cta = () => {
   );
 };
 
-export default Cta;
+export default Cta3;

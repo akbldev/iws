@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <div className="flex h-screen items-center justify-center bg-[linear-gradient(to_right_bottom,hsla(var(--primary-dark),.90),hsla(var(--primary-dark),.90)),url('/hero-bg.jpeg')] bg-cover text-background">
+    <div className="flex h-screen items-center justify-center bg-[linear-gradient(to_right_bottom,hsla(var(--primary-dark),.50),hsla(var(--primary-dark),.50)),url('/images/hero-bg.webp')] bg-cover text-background">
       {/* Main Content */}
       <main className="container space-y-6 pt-24 text-center">
         {/* Text Content */}
