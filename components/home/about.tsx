@@ -9,13 +9,28 @@ const About = () => {
     "Editing Videos",
   ];
 
+  const images = [
+    "/images/about/about-1.webp",
+    "/images/about/about-3.webp",
+    "/images/about/about-4.webp",
+    "/images/about/about-2.webp",
+  ];
+
   return (
-    <section className="container flex items-stretch gap-10">
-      <div className="grid flex-1 grid-cols-2 gap-6">
-        <div className="rounded-tl-3xl bg-primary-lighter"></div>
-        <div className="rounded-tr-3xl bg-primary-lighter"></div>
-        <div className="rounded-bl-3xl bg-primary-lighter"></div>
-        <div className="rounded-br-3xl bg-primary-lighter"></div>
+    <section className="container flex items-center gap-10">
+      <div className="grid flex-1 grid-cols-2 gap-6 overflow-hidden">
+        {images.map((img, idx) => (
+          <div
+            key={idx}
+            className="aspect-square overflow-hidden rounded-br-xl rounded-tl-xl bg-primary-lighter"
+          >
+            <img
+              src={img}
+              alt="About IWS"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        ))}
       </div>
 
       <div className="flex-1 space-y-6 font-oxanium">
